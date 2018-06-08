@@ -5,7 +5,7 @@
     <title>Lesson Test</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-    <script src="script.js"></script>
+    <script src="newScript.js"></script>
 </head>
 <body>
     <head>
@@ -14,7 +14,13 @@
     <main>
         <div id="container">
             <div id="programming">
-                <textarea spellcheck="false">
+                <table id="backtable">
+                    <tr id= "first"></tr>
+                    <tbody id="backTBody">
+                        <tr><td>1.</td></tr>
+                    </tbody>
+                </table>
+                <textarea autofocus spellcheck="false">
                 </textarea>
                 <div id="run">
                     Run
@@ -23,9 +29,6 @@
             <div id="visualisation">
                 <table id="board">
                     <tr>
-                        <td id="leftTop"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td  id="rightTop"></td>
-                    </tr>
-                    <tr>
                         <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
@@ -50,7 +53,10 @@
                         <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
-                        <td id="rightTop"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td id="rightBottom"></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     
                 </table>

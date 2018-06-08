@@ -11,28 +11,8 @@ body{
     border-radius: 30px;
     margin:0 auto;
 }
-#programming{
-    width:550px;
-    height: 550px;
-    border: 1px solid lightcoral;
-    float: left;
-    margin-top:25px;
-    margin-left:25px;
-    background: white;
-    border-radius: 20px;
-}
-#programming textarea{
-    border: none;
-    overflow: auto;
-    outline: none;
-    width:510px;
-    height: 470px;
-    border-radius: 20px 20px 0px 0px;
-    padding: 10px 20px 10px 20px;
-    font-family: 'Song Myung', serif;
-    font-size:20px;
-    resize: none;
-}
+
+
 #programming div{
     background: lawngreen;
     height: 38px;
@@ -75,10 +55,71 @@ th, td {
 .obstacle{
     background: lightblue;
 }
-.car{
+#car{
     background: red;
     position: absolute;
     width: 55px;
     height:55px;
     border-radius:50px 50px 20px 20px;
+    transform: scale(1);
+    transition: transform 250ms ease-in-out;
+}
+
+
+#programming{
+    width:550px;
+    height: 550px;
+    border: 1px solid lightcoral;
+    float: left;
+    margin-top:25px;
+    margin-left:25px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    background: white;
+}
+
+
+#programming textarea{
+    position: relative;
+    background: transparent;
+    border: none;
+    overflow: auto;
+    outline: none;
+    width:510px;
+    height: 470px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 20px 10px 30px;
+    font-family: 'Song Myung', serif;
+    font-size:20px;
+    resize: none;
+}
+
+#backtable{
+    color: rgb(43, 43, 43);
+    position: absolute;
+    border-collapse: collapse;
+    width:550px;
+}
+#backtable tr{
+    color: rgb(43, 43, 43);
+    font-family: 'Song Myung', serif;
+    font-size:22px;
+}
+
+#backTBody td{
+    color: rgb(43, 43, 43);
+    font-family: 'Song Myung', serif;
+    font-size:20px;
+    padding-left:4px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.highlightedOK{
+    background: lightgreen;
+}
+.highlightedNOTOK{
+    background: lightcoral;
+}
+#first{
+    height:10px;
 }
